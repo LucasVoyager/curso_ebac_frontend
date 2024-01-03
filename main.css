@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+header button {
+    margin-left: 16px;
+}
+
+form {
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+}
+
+body {
+    background-image: url("./images/tarefas.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form h2 {
+    margin-bottom: 16px;
+    color: #5a0a0ae8;
+}
+
+input, button {
+    padding: 8px;
+}
+
+button {
+    background-color: brown;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+}
+
+#resetar-but {
+    background-color: red;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    max-width: 25%;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    padding-left: 8px; 
+}
+
+.li-clicked {
+    text-decoration: line-through;
+}
