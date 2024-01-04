@@ -25,9 +25,7 @@ form {
 }
 
 body {
-    background-image: url("./images/tarefas.jpg"); 
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #775c5c ;
 }
 
 form h2 {
