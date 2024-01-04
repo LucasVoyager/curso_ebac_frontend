@@ -1,114 +1,73 @@
 * {
-    box-sizing: border-box;
     margin: 0;
-    padding: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-body > header {
-    background-color: #2f3640;
+header {
     padding: 16px 0;
-    color: #f5f6fa;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    text-transform: uppercase;
 }
 
-header .container {
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header li {
-    display: inline;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+header button {
     margin-left: 16px;
 }
 
-header li a {
-    color:  #f5f6fa;
-    text-decoration: none;
+form {
+    padding: 24px 0;
+    text-align: center;
+    display: none;
 }
 
-.container {
-    width: 1366px;
-    margin: 0 auto;
+body {
+    background-image: url("./images/tarefas.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.articles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.articles article img {
-    /*height: 180px;*/
-    width: 100%;
-}
-
-.articles article {
-    width: 30%;
-}
-
-section {
-    padding: 16px 0;
-}
-
-section h2,
-.articles article {
+form h2 {
     margin-bottom: 16px;
+    color: #5a0a0ae8;
 }
 
-.articles article h3 {
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.articles article a {
-    background-color: blue;
-    color: #fff;
+input, button {
     padding: 8px;
-    display: inline-block;
-    text-decoration: none;
+}
+
+button {
+    background-color: brown;
+    border: none;
+    cursor: pointer;
     font-weight: bold;
-    margin-top: 8px;
+    color: #fff;
 }
 
-.articles article a:hover {
-    text-decoration: underline;
+#resetar-but {
+    background-color: red;
 }
 
-.articles article p,
-.articles article a {
-    font-family: Arial, Helvetica, sans-serif;
+ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.articles article h3 {
-    font-size: 24px;
+ul li {
+    max-width: 40%;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    padding-left: 8px; 
+    color: #000000ee;
+    margin: 5px;
 }
 
-section h2 {
-    font-size: 32px;
-}
-
-#sports {
-    background-color: rgba(0,255,0,0.1);
-}
-
-#sports .articles article a {
-    background-color: rgba(0,255,0,0.8);
-}
-
-#economy {
-    background-color: #f8f59f;
-}
-
-#economy .articles article a {
-    background-color:#ff9f1a ;
-}
-
-#clima {
-    background-color: aqua;
-}
-
-#Tecnologia {
-    background-color: grey;
+.li-clicked {
+    text-decoration: line-through;
 }
