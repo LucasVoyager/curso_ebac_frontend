@@ -54,15 +54,18 @@ button {
 ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 ul li {
-    max-width: 25%;
+    max-width: 40%;
     cursor: pointer;
     list-style: none;
     position: relative;
     max-height: 280px;
     padding-left: 8px; 
+    color: #000000ee;
+    margin: 5px;
 }
 
 .li-clicked {
