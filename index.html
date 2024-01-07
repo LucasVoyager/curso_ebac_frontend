@@ -3,27 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de tarefas</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Cadastro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@200;400&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header>
-        <h1>Lista de tarefas</h1>
-        <button type="button">Nova tarefa +</button>
-    </header>
-    <form>
-        <h2>Iserir tarefa</h2>
-        <input type="text" id="tarefa" required placeholder="Digite a tarefa"/>
-        <button type="submit">Adicionar</button>
-        <button type="reset" id ="resetar-but">Cancelar</button>
-    </form>
-    <ul>
-        <li></li>
-    </ul>
+    <header></header>
+    <div class="container">
+        <h2>Inscreva-se</h2>
+        <form>
+            <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome">
+            </div>
+            <div>
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone">
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf">
+            </div>
+            <div>
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco">
+            </div>
+            <div>
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep">
+            </div>
+            <button type="submit">Enviar</button>              
+        </form>
+    </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="main.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

@@ -1,71 +1,59 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-header {
-    padding: 16px 0;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    font-style: italic;
-    text-transform: uppercase;
-}
-
-header button {
-    margin-left: 16px;
-}
-
-form {
-    padding: 24px 0;
+h1, h2 {
     text-align: center;
-    display: none;
+    font-weight: bold;
+}
+
+.container {
+    width: 300px;
+    padding: 16px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid black;
+    border-radius: 8px;
 }
 
 body {
-    background-color: #775c5c ;
+    background-image: url('./images/montanha.jpg');
+    background-size: cover; 
 }
 
-form h2 {
-    margin-bottom: 16px;
-    color: #5a0a0ae8;
+form {
+    width: 100%;
 }
 
-input, button {
-    padding: 8px;
+h2 {
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    margin-bottom: 8px;
+    font-weight: bold;
 }
 
 button {
-    background-color: brown;
+    margin-top: 8px;
+    display: block;
+    width: 100%;
+    padding: 8px 0;
     border: none;
-    cursor: pointer;
-    font-weight: bold;
+    background-color: #5e2129;
     color: #fff;
-}
-
-#resetar-but {
-    background-color: red;
-}
-
-ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-ul li {
-    max-width: 40%;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
     cursor: pointer;
-    list-style: none;
-    position: relative;
-    max-height: 280px;
-    padding-left: 8px; 
-    color: #000000ee;
-    margin: 5px;
-}
-
-.li-clicked {
-    text-decoration: line-through;
+    border-radius: 6px;
 }
