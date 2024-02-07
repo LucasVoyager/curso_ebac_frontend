@@ -1,0 +1,16 @@
+@use 'variaveis';
+
+body {
+    background-color: variaveis.$corPrincipal;
+}
+
+body .container {
+    display: grid;
+    grid-template-columns: repeat(3,32.6%);
+    column-gap: 1%;
+}
+
+img {
+    width: 100px;
+}
+
