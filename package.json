@@ -1,23 +1,16 @@
 {
-  "name": "gulp",
+  "name": "curso_ebac_frontend_atividades",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gulp": "gulp",
+    "less": "less-watch-compiler ./src/styles ./build/styles main.less",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "sass": "^1.70.0"
-  },
-  "dependencies": {
-    "gulp-obfuscate": "^0.2.9",
-    "gulp-sass": "^5.1.0",
-    "gulp-uglify": "^3.0.2"
+    "less": "^4.2.0",
+    "less-watch-compiler": "^1.16.3"
   }
 }

@@ -1,1 +1,0 @@
-const teste=1,teste1=2;function somar(t,e){return t+e}console.log(somar(teste,teste1));
