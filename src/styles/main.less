@@ -1,7 +1,37 @@
-body {
-    background-color: blue;
+@import "reset.less";
+@import "variaveis.less";
+
+.width100() {
+    width: 100%;
 }
 
-h1 {
-    text-align: center;
+.produtos {
+    max-width: 640px;
+    width: .width100();
+    margin: 56px auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 1%;
+
+    .produto {
+
+        &__imagem {
+            width: .width100();
+        }
+
+        &__nome {
+            font-size: 1.2em;
+            margin: 8px 0;
+        }
+
+        &__descricao {
+            color: @corDoTexto;
+        }
+
+        &__em-destaque {
+            border: 2px solid gold;
+            padding: 8px;
+            background-color: @corDeFundo;
+        }
+    }
 }
